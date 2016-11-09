@@ -5,23 +5,58 @@ $(function (){
 
     // Custom Scrollbar
     var nice = $("html").niceScroll({
-        cursorwidth: 8,
-        cursorborder: "0px solid #fff",
+        cursorwidth: 14,
+        cursorborder: "0px solid #000",
         cursorborderradius: '0',
-        cursorcolor: '#ea5827'
+        cursorcolor: 'rgba(60,60,60,1)'
     });
 
     function home_height () {
         var element = $('.st-home-unit'),
             elemHeight = element.height(),
             winHeight = $(window).height(),
-            padding = (winHeight - elemHeight - 200) / 2;
+            marginTop = (winHeight - elemHeight - 160);
 
-        if (padding < 1) {
-            padding = 0;
+        if (marginTop < 1) {
+            marginTop = 0;
         };
-        element.css('padding', padding+'px 0');
+        element.css('margin-top', marginTop+'px');
+//        element.css('margin-top', marginTop+'px');
+//        element.css('margin-bottom', marginBottom+'px'); 
     }
     home_height();
     
+    $(window).resize(function () {
+        home_height ();
+    });
+
+    var fadeStart = $(window).height()/3
+        ,fadeUntil = $(window).height()
+        ,fading = $('.st-home-unit')
+    ;
+
+    $(window).bind('scroll', function () {
+        var offset = $(document).scrollTop()
+            ,opacity = 0
+            ,opacity2 = 1
+        ;
+
+        if (offset <= fadeStart) {
+            opacity = 1;
+            opacity2 = 0;
+        } else if (offset <= fadeUntil) {
+            opacity = 1 - offset / fadeUntil;
+            opacity2 = offset / fadeUntil;
+        }
+
+        fading.css({'opacity': opacity});
+
+        if (offset >= 120) {
+            $('.st-navbar').addClass("st-navbar-mini");
+        } else if (offset <= 119) {
+            $('.st-navbar').removeClass("st-navbar-mini");
+        }
+
+    });
+
 });

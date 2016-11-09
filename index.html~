@@ -10,15 +10,13 @@
         <title>Визовая Поддержка</title>
 
         <!-- icon -->
-        <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+        <link rel="shortcut icon" href="img/icon.png" type="image/png">
 
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css?family=Tenor+Sans" rel="stylesheet">
 
         <!-- css -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-
         <link href="css/style.css" rel="stylesheet">
         <!-- woo.js/animate.css -->
         <link href="css/animate.css" rel="stylesheet">
@@ -58,7 +56,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#">Главная</a></li>
+                            <li><a href="#">Главная</a></li>
                             <li><a href="#">Акции</a></li>
                             <li><a href="#">Стоимость</a></li>
                             <li><a href="#">Почему мы</a></li>
@@ -90,24 +88,21 @@
     <!-- header-end -->
 
     <!-- home-begin -->
-    <section class="home">
+    <section class="jumbotron">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="st-home-unit">
-                    
                         <div class="hero-txt">
                             <p class="hero-work">Визы - Официальное Трудоустройство - ВНЖ/ПМЖ</p>
-                                <h2 class="hero-title">Мы поможем Вам оформить визу!</h2>
-                                <a href="#" class="btn btn-main btn-lg" data-toggle="modal" data-target="#question">Задать Вопрос</a>
-                                <p class="hero-item">Наша компания предлагает Вам уникальную возможность оформления всех визовых документов для Вас и Ваших близких в самые быстрые сроки, даже в случае отказа и при наличии минимального пакета документов.</p>
+                            <h2 class="hero-title">Дорогие друзья! Мы поможем оформить Вам визу, не смотря на отказ и наличия минимального пакета документов.</h2>
+                            <p class="hero-item">Наша компания предлагает Вам уникальную возможность оформления всех визовых документов для Вас и Ваших близких в самые быстрые сроки.</p>
                         </div>
-                   
                     </div>
                 </div>
             </div>
         </div>
-<!--        <div class="mouse-icon"><div class="wheel"></div></div> -->
+        <div class="mouse-icon"><div class="wheel"></div></div>
     </section>
     <!-- home-end -->
 
@@ -122,7 +117,6 @@
                         </div>
                         <blockquote>
                             <p>Большое спасибо за то ,что помогли документами , с билетами , а так же объяснили суть шенгенской визы и порекомендовали страны c их особенностями.</p>
-                            <footer>Arthur Fernandez, <cite title="Source Title">Example Inc.</cite></footer>
                         </blockquote>
                     </div>
                 </div>
@@ -130,39 +124,6 @@
         </div>
     </section>
     <!-- testimonial-end -->
-    
-    <!-- pricing-begin -->
-    <section class="pricing" id="pricing">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title st-center">
-                        <h3>Наши специальные предложения по оформлению виз</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="pricing-table">
-                        <div class="pricing-header">
-                            <div class="pt-name">Цена недели</div>
-                        </div>
-                        <div class="pricing-body">
-                            <ul>
-                                <li><i class="fa fa-plane fa-5x" aria-hidden="true"></i></li>
-                                <li>Мультивиза в Италию</li>
-                                <li>до <span class"big-price">150&#8364;</span></li>
-                            </ul>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="#" class="btn btn-default">Узнать</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- pricing-end -->
 
     <!-- js -->
     <!--
