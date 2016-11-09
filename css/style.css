@@ -77,6 +77,31 @@ a:hover
     color: #fff;
 }
 
+.section-title
+{
+    margin-bottom: 70px;
+}
+.section-title h3
+{
+    text-transform: uppercase;
+    color: #4c4c4c;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 28px;
+    line-height: 48px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    clear: both;
+    position: relative;
+    padding: 0 10px;
+}
+.section-title.st-center
+{
+    text-align: center;
+}
+
 /* header */
 
 .navbar-default
@@ -389,7 +414,7 @@ a:hover
     width: 40px;
     height: 40px;
     border-radius: 40px;
-    background-color: #4ecdc4;
+    background-color: rgba(93,197,188,1);
     position: absolute;
     bottom: 5%;
     left: 5%;
@@ -443,7 +468,7 @@ a:hover
 
 .pricing-table
 {
-    border: 1px solid #f2f2f2;
+    border: 1px solid #e2e2e2;
     border-radius: 5px;
     background-color: #fff;
 }
@@ -460,16 +485,20 @@ a:hover
 
 .pricing-table .pricing-header .pt-name
 {
-    padding: 10px 40px;
+    padding: 30px 30px;
     text-align: center;
     font-weight: 300;
     font-size: 24px;
     line-height: 40px;
     color: #4c4c4c;
-    border-top: 1px solid #f2f2f2;
-    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #e2e2e2;
+/*    border-bottom: 1px solid #f2f2f2; */
 }
-
+.pricing-table .pricing-body
+{
+    text-align: center;
+    color: #4c4c4c;
+}
 .pricing-table .pricing-body ul
 {
     margin: 0;
@@ -481,14 +510,83 @@ a:hover
 {
     padding: 8px 25px;
     margin: 0;
+    font-size: 18px;
 }
 
-.pricin-table .pricing-body ul li .fa
+.pricing-table .pricing-body ul li:nth-child(even)
 {
-    font-size: inherit;
+    height: 62px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pricing-table .pricing-body ul li:nth-child(odd)
+{
+    height: 100px; 
+}
+.pricing-table .pricing-body ul li img
+{
+    width: 100px;
+}
+.pricing-table .pricing-body .img-center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pricing-table .pricing-body .big-price
+{
+    color: #000;
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 74px;
 }
 
-.pricing-table .pricing-body ul li .fa-plane
+.pricing-table .pricing-body .big-attention
 {
-/*    color: yellow; */
+    color: #000;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 44px;
+    letter-spacing: 1px;
+}
+
+.pricing-table .pricing-body .attention
+{
+    color: #000;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.pricing-table .pricing-footer
+{
+    text-align: center;
+    padding: 15px 40px;
+/*    border-top: 1px solid #e2e2e2; */
+}
+
+.pricing-table.featured .pricing-header
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-table.featured .pricing-header .featured-text
+{
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(255,23,30,1);
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: -28px;
+    padding: 5px 0;
+    width: 118px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
