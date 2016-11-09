@@ -9,7 +9,7 @@
 body
 {
     font-family: Calibri, sans-serif;
-    color: #202020;
+    color: #4c4c4c;
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
@@ -459,18 +459,41 @@ a:hover
 {
     background-color: rgba(212,90,46,1);
 }
+.pink
+{
+    background-color: rgba(189,49,73,1);
+}
 
+.ocean
+{
+    background-color: rgba(135,194,191,1);
+}
+
+.yellow
+{
+    background-color: rgba(244,212,90,1);
+}
+
+.light-pink
+{
+    background-color: rgba(214,124,140,1);    
+}
 /* pricing */
 .pricing
 {
     padding: 100px 0;
 }
 
+.pricing .section-title
+{
+    margin-bottom: 50px;
+}
 .pricing-table
 {
     border: 1px solid #e2e2e2;
     border-radius: 5px;
     background-color: #fff;
+    margin-top: 20px;
 }
 
 .pricing-table .pricing-header .pt-price
@@ -485,6 +508,7 @@ a:hover
 
 .pricing-table .pricing-header .pt-name
 {
+    height: 120px;
     padding: 30px 30px;
     text-align: center;
     font-weight: 300;
@@ -589,4 +613,86 @@ a:hover
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
+}
+
+/* features-desc */
+.features-desc
+{
+    padding: 100px 0;
+    background-color: rgba(221,240,236,1);
+}
+
+.features-desc .img-general
+{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.features-desc .center
+{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.features-desc p
+{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* adventages */
+.adventages
+{
+    padding: 100px 0;
+}
+
+.adventages .section-title h3
+{
+    font-size: 44px;
+    font-weight: 700;
+    color: #4c4c4c;
+    line-height: 56px;
+}
+
+.adventages .adventage-img
+{
+    margin-top: 50px;
+}
+
+.adventages .adventage
+{
+    padding: 10px 0 0;
+    position: relative;
+}
+.adventages blockquote
+{
+    border-left: none;
+    background-color: rgba(235,235,235, 1);
+    padding-left: 40px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.adventages blockquote h4
+{
+    color: #000;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.adventages .adventage-num
+{
+    background-color: rgba(93,197,188,1);
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    height: 54px;
+    left: -20px; 
+    line-height: 56px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 54px;
 }
