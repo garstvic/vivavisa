@@ -76,6 +76,40 @@ a:hover
     border-color: #33b5ac;
     color: #fff;
 }
+input
+{
+    margin: 20px 0;
+    font-weight: 400;
+}
+input.name,
+input.tel
+{
+    padding: 30px 40px 30px 50px;
+    color: #000;
+    
+}
+
+form .input
+{
+    position: relative;
+}
+form .input input
+{
+    font-size: 20px;
+}
+
+form .input .fa-input
+{
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    color: #4c4c4c;
+}
+
+form button
+{
+    width: 100%;
+}
 
 .section-title
 {
@@ -446,6 +480,7 @@ a:hover
 {
     font-style: italic;
     font-weight: 300;
+    text-align: justify;
 }
 
 .testimonial blockquote footer,
@@ -454,10 +489,15 @@ a:hover
 {
     color: #fff;
 }
+
+.testimonial blockquote .black
+{
+    color: #4c4c4c;
+}
 /* colors */
 .orange
 {
-    background-color: rgba(212,90,46,1);
+    background-color: rgba(212,90,46,1); 
 }
 .pink
 {
@@ -477,6 +517,11 @@ a:hover
 .light-pink
 {
     background-color: rgba(214,124,140,1);    
+}
+
+.black
+{
+    color: #4c4c4c;
 }
 /* pricing */
 .pricing
@@ -634,10 +679,20 @@ a:hover
     text-align: center;
     margin-top: 20px;
 }
+.features-desc h3
+{
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+}
 .features-desc p
 {
     margin-top: 20px;
     font-size: 18px;
+    text-align: justify;
+    padding-left: 60px;
+    padding-right: 30px;
 }
 
 /* adventages */
@@ -669,15 +724,23 @@ a:hover
     border-left: none;
     background-color: rgba(235,235,235, 1);
     padding-left: 40px;
+    padding-right: 40px;
     margin-left: 20px;
     margin-bottom: 10px;
 }
 .adventages blockquote h4
 {
     color: #000;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 36px;
     font-weight: 400;
+}
+
+.adventages blockquote p
+{
+    text-align: justify;
+    line-height: 20px;
+    padding-bottom: 20px;
 }
 
 .adventages .adventage-num
@@ -695,4 +758,109 @@ a:hover
     text-align: center;
     top: 0px;
     width: 54px;
+}
+
+/* consultation */
+
+.consultation
+{
+    padding: 100px 0;
+    background-color: rgba(93,93,134,1);
+}
+
+.consultation .st-title
+{
+    padding-right: 40px;
+}
+.consultation .st-title h3
+{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 48px;
+    color: #fff;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.consultation .st-title p
+{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.consultation .get-consult-form
+{
+    text-align: center;
+}
+.consultation .get-consult h4
+{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #fff;
+    margin-top: 30px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.consultation .get-consult p
+{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* advenatage second */
+.adventage-second blockquote
+{
+    background-color: transparent;
+    position: relative;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 80px;
+}
+
+.adventage-second blockquote:before
+{
+    background-color: rgba(244,212,90,1);
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 80px;
+    left: -10px;
+    position: absolute;
+    top: -6px;
+    width: 80px;
+    z-index: -1;
+}
+
+.adventage-second blockquote p
+{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-left: 10px;
+    position: relative;
+}
+
+.adventage-second blockquote p:before
+{
+    position: absolute;
+    font-family: FontAwesome;
+    content: '\f054';
+    left: -15px;
+    top: -2px;
+    font-size: 18px;
+}
+
+/* three-steps */
+.three-steps
+{
+    background-color: rgba(233,233,233,1);
+    padding: 100px 0;
+
 }
