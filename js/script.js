@@ -8,19 +8,23 @@ $(function (){
         cursorwidth: 14,
         cursorborder: "0px solid #000",
         cursorborderradius: '0',
-        cursorcolor: 'rgba(60,60,60,1)'
+        cursorcolor: 'rgba(54,71,79,1)'
     });
+
+    // animation
+
+    new WOW().init();
 
     function home_height () {
         var element = $('.st-home-unit'),
             elemHeight = element.height(),
             winHeight = $(window).height(),
-            marginTop = (winHeight - elemHeight - 160);
+            marginTop = (winHeight - elemHeight - 160) / 2;
 
         if (marginTop < 1) {
             marginTop = 0;
         };
-        element.css('margin-top', marginTop+'px');
+        element.css('margin', marginTop+'px 0');
 //        element.css('margin-top', marginTop+'px');
 //        element.css('margin-bottom', marginBottom+'px'); 
     }
