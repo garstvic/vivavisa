@@ -20,9 +20,8 @@ body
 
 h1, h2, h3, h4, h5, h6
 {
-    color: #2c2c2c;
-    letter-spacing: 1px;
-    font-weight: 400;
+    color: #fff;
+    font-weight: 700;
 }
 
 p
@@ -65,9 +64,12 @@ a:hover
 {
     color: #fff;
 /*    background-color: rgba(93,197,188,1);
-    border-color: rgba(93,197,188,1); */
+    border-color: rgba(93,197,188,1); 
     background-color: rgba(40,182,246,1);
-    border-color: rgba(40,182,246,1);
+    border-color: rgba(40,182,246,1); */
+    background-color: rgba(128,202,184,1);
+    border-color: rgba(128,202,184,1); */
+
     text-transform: uppercase;
 }
 
@@ -269,12 +271,17 @@ form button
 /* home  */
 .home
 {
-    background-image: url(../img/jumbotron-bg.jpg); 
+    background-image: url(../img/jumbotron-bg.jpg);  
+    background-image: url(../img/jumbotron-bg1.jpg);  
+    background-image: url(../img/jumbotron-bg2.jpg);  
+    background-image: url(../img/jumbotron-bg3.jpg);  
+    background-image: url(../img/jumbotron-bg4.jpg);  
+    background-image: url(../img/jumbotron-bg5.jpg);  
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: rgba(214,222,225,1);
+    background-color: rgba(255,255,255,1);
     margin: 0;
     padding: 100px 0 60px 0;
     position: relative;
@@ -294,10 +301,7 @@ form button
 .home .hero-txt .hero-title
 {
     font-family: 'PT Sans Caption', sans-serif;
-    color: #4c4c4c;
     color: #fff;
-    font-size: 74px;
-    line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 15px; 
@@ -305,12 +309,27 @@ form button
     margin-bottom: 20px;
     padding-top: 20px;
     padding-bottom: 10px; 
-    text-shadow: 1px 2px #333;    
     text-align: center;
+}
+.home .hero-txt .hero-title h2
+{
+    font-size: 74px;
+    line-height: 1.2;
 }
 .home .hero-txt .hero-title span
 {
     text-transform: none;
+    line-height: .6;
+}
+.home .hero-txt .hero-title .with-us
+{
+    font-size: 36px;
+    line-height: 1.2;
+}
+.home .hero-txt .hero-title .brand
+{
+    font-size: 78px;
+    line-height: 1.2;
 }
 
 .home .hero-txt .hero-work
@@ -347,8 +366,9 @@ form button
     font-size: 24px;
     font-weight: 200;
     line-height: 0.75;
-    text-shadow: 1px 1px #333;   
+/*    text-shadow: 1px 1px #333;   */
     text-align: center;
+    display: none;
 }
 
 .st-home-unit
