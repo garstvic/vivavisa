@@ -44,7 +44,6 @@
     <!-- header-begin -->
     <header class="st-navbar">
         <nav class="navbar navbar-default navbar-fixed-top clearfix" role="navigation">
-            <div class="container">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
@@ -53,8 +52,8 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" hfer="#">БыстроВиза</a>
+                        </button> 
+                        <a class="navbar-brand" hfer="#"><img class="brand-img" src="img/logo-brown.png" alt=""></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -62,10 +61,9 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active"><a href="#">Главная</a></li>
                             <li><a href="#">Акции</a></li>
-                            <li><a href="#">Стоимость</a></li>
-                            <li><a href="#">Почему мы</a></li>
                             <li><a href="#">О компании</a></li>
-                        </ul>
+                            <li><a href="#">Почему мы</a></li>
+                        </ul> 
                         <!--
                         <div class="navbar-right phones">
                             <p class="navbar-text">(555) 555-55-55</p>
@@ -84,9 +82,8 @@
                             </div>
                         </ul>
                         -->
-                    </div>
+<!--                    </div> -->
                 </div>
-            </div>
         </nav>
     </header>
     <!-- header-end -->
@@ -96,7 +93,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="st-home-unit">
+                    <div class="st-home-unit" id="home-unit">
                     
                         <div class="hero-txt">
                             <p class="hero-work">Визы - Официальное Трудоустройство - ВНЖ/ПМЖ</p>
@@ -106,9 +103,9 @@
                                     <span class="with-us">Если оформлять с</span><br><span class="brand">БыстроВиза!</span>
                                 </p>
                             </div>
-                                <p class="hero-item">Наша компания предлагает Вам уникальную возможность оформления всех визовых документов для Вас и Ваших близких в самые быстрые сроки, даже в случае отказа и при наличии минимального пакета документов.</p>
-                                <a href="#" class="btn btn-main btn-lg" data-toggle="modal" data-target="#question">Узнать больше</a>
-                        </div>
+                                <a href="#" class="btn btn-main btn-lg btn-home">Узнать Больше</a>
+                                <p class="hero-item">Мы предлагаем оформить визу для Вас и Ваших близких в кратчайшие сроки,<br>даже в случае отказа и располагая минимальным пакет документов.</p>
+                      </div>
                    
                     </div>
                 </div>
@@ -119,7 +116,7 @@
     <!-- home-end -->
 
     <!-- testimonial-begin -->
-    <section class="testimonials">
+    <section class="testimonials light-pink">
         <div class="container">
             <div class="row">
                 <div class="testimonial">
@@ -130,7 +127,7 @@
                     </div>
                     <div class="col-md-9 col-sm-9 col-xs-12">
                         <blockquote>
-                            <p>Большое спасибо за то, что помогли документами, с билетами, а так же объяснили суть шенгенской визы и порекомендовали как быстрее оформить визу.</p>
+                            <p>Благодарю что оформили визу за три недели, помогли с билетами, а так же подготовили к прохождению собеседования.</p>
                             <footer>Александр Ильченко, <cite title="Source Title">Пекарь</cite></footer>
                         </blockquote>
                     </div>
@@ -229,7 +226,7 @@
     <!-- pricing-end -->
 
     <!-- testimonail #2 - begin -->
-    <section class="testimonials">
+    <section class="testimonials ocean">
         <div class="container">
             <div class="row">
                 <!--<div class="col-md-12">-->
@@ -241,7 +238,7 @@
                         </div>
                         <div class="col-md-9 col-sm-9 col-xs-12">
                             <blockquote>
-                                <p>Печальная экономическая ситуация нашей страны ни для кого не новость. Пришлось отправиться зарубеж, на заработки. Изначально обращалась в другие компании, которые давали мне огромный списки документов (а я домохозяйка), плюс называли не малые суммы за услуги и никаких гарантий. Обратившись в компанию "БыстроВиза", без труда оформила визу и вот уже 8 месяц работаю, как и планировала.</p>
+                                <p>Печальная экономическая ситуация в стране ни для кого не новость. Пришлось отправиться зарубеж, на заработки. Изначально обращалась в другие компании, которые давали мне длинный список необходимых документов (а я домохозяйка), плюс называли не малые суммы за услуги и никаких гарантий. Обратившись в компанию "БыстроВиза", без труда оформила визу и вот уже 8 месяц работаю, как и планировала.</p>
                                 <footer>Name Surname, <cite title="Source Title">Медсестра</cite></footer>
                             </blockquote>
                         </div>
@@ -260,38 +257,18 @@
                     <img src="photo/general.jpg" alt="" class="img-responsive">
                     <span class="center">Генеральный директор компании &quot;БыстроВиза&quot;</span>
                 </div>
-                <div class="col-md-7">
-                    <h3>Дорогие друзья!<br>Однажды я был на вашем месте.</h3>
-                    <p>Я прекрасно понимаю как тяжело выбрать правильную страну, собрать документы соответствия, убедиться в подлинности предоставленных услуг, а так же не попасть в финансовые аферы. Пройдя этот путь, и самому столкнувшись с неприятностями, я встретил не мало людей, который попадали в такую же ситуацию. Наша компания работает на рынке более 7 лет. К нам обращаться люди с других регионов, так как уверенны в компетентности и честности наших сотрудников. По необходимости наш менеджер предоставит Вам все юридические гарантии, разрешительные документы, а отзывы, касательно деятельности нашей фирмы, вы можете прочитать, как на сайте, так и в интернете на профильных форумах. Всегда будем рады Вам помочь!</p>
+                <div class="col-md-7 dear-friends">
+                    <h3>Дорогие друзья!<br><span>Я тоже оформлял визу как и Вы.</span></h3>
+                    <p>Я понимаю как тяжело выбрать правильную компанию, которая занимается оформлением виз, собрать пакет нужных документов, а так же не попасть в финансовые аферы. Пройдя этот путь, я встретил не мало людей, который попадали в неприятную ситуацию вовремя получения визы.</p>
+                    <p>Компания &quot;БыстроВиза&quot; была основана в 2009 года и за это время заработала солидную репутацию, поэтому к нам обращаются люди с других регионов. По необходимости менеджер предоставит Вам все юридические гарантии, разрешительные документы, а отзывы, касательно деятельности нашей фирмы, вы можете прочитать, как на сайте, так и в интернете на профильных форумах. Будем рады Вам помочь!</p>
+                    <a href="#" class="btn btn-main btn-lg btn-home"><i class="fa fa-paper-plane"></i> Отправить письмо</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- features-decs - end -->
 
-    <!-- testimonial #3 - begin -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="testimonial">
-                        <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="testimonial-img">
-                            <img src="photo/client1.jpg" alt="">
-                        </div>
-                        </div>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
-                        <blockquote>
-                            <p class="black">Мне поступило предложение по работе в области разработки ПО в Дании. Честно говоря, так сложилось, что я никогда не был заграницей. И ни я ни мой круг знакомых не сталкивался с оформлением виз. Я не особо люблю общение с консультантами, менеджерами и бегать выбирать компанию не для меня. На форумах я не раз встречал название данной компании, потому и обратился. Самое главное что отзывы не подвели, мне четко назвали стоимость, озвучили требования, после чего в кратчайшие сроки оформили все необходимые документы.</p>
-                            <footer class="black">Name Surname, <cite title="Source Title">Example Inc.</cite></footer>
-                        </blockquote>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-        </div>
-    </section>
-    <!-- testimonial #3 - end -->
+
     
     <!-- adventages - begin -->
     <section class="adventages">
@@ -339,7 +316,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="st-title st-center">
-                        <h3>Наши клиенты получают визы, потому что у нас работают отличные специалисты.</h3>
+                        <h3>Клиенты Компании получают визы, потому что у нас работают опытные менеджеры.</h3>
                         <p>Lorem ipsum dolor sit amet, eu reque errem vis, omnis detracto inimicus id nam. Munere insolens ne vis, pri no qualisque dissentias.</p>
                         <p>Lorem ipsum dolor sit amet, eu reque errem vis, omnis detracto inimicus id nam. Munere insolens ne vis, pri no qualisque dissentias.</p>
                     </div>
@@ -373,6 +350,30 @@
         </div>
     </section>
     <!-- get-consult - end -->
+
+    <!-- testimonial #3 - begin -->
+    <section class="testimonials pink">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testimonial">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="testimonial-img">
+                            <img src="photo/client1.jpg" alt="">
+                        </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                        <blockquote>
+                            <p class="black">Мне поступило предложение по работе в области разработки ПО в Дании. Честно говоря, так сложилось, что я никогда не был заграницей. И ни я ни мой круг знакомых не сталкивался с оформлением виз. Я не особо люблю общение с консультантами, менеджерами и бегать выбирать компанию не для меня. На форумах я не раз встречал название данной компании, потому и обратился. Самое главное что отзывы не подвели, мне четко назвали стоимость, озвучили требования, после чего в кратчайшие сроки оформили все необходимые документы.</p>
+                            <footer class="black">Name Surname, <cite title="Source Title">Example Inc.</cite></footer>
+                        </blockquote>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <!-- testimonial #3 - end -->
 
     <!-- adventages # 2 - begin -->
     <section class="adventages">
@@ -546,7 +547,7 @@
     <!-- refusal - end -->
 
     <!-- testimonial # 4 - begin -->
-    <section class="testimonials">
+    <section class="testimonials green">
         <div class="container">
             <div class="row">
                 <div class="testimonial">
@@ -613,7 +614,7 @@
                     <div class="step">
                         <div class="step-body">
                             <blockquote>
-                                <p>Прийти в посольство по записи, удобной для ВАС</p>
+                                <p>Прийти в посольство по заОтправить письмо для ВАС</p>
                             </blockquote>
                             <div class="step-num">2</div>
                         </div>
@@ -665,6 +666,7 @@
 
 <script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/flowtype.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
