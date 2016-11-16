@@ -31,18 +31,18 @@ $(function (){
 
     // dear-friends - begin
     function dear_friends(){
-        var div = $('.features-desc'),
-            text = div.find('.dear-friends'),
-            img = div.find('img'),
-            height = text.height();
+        if ($(window).width() > $(window).height()){
+            var div = $('.features-desc'),
+                text = div.find('.dear-friends'),
+                img = div.find('img'),
+                height = text.height();
 
-        img.css('height', height - 10 + 'px');
-        
+            img.css('height', height - 10 + 'px');
+        };
     };
     // dear-friends - end
     window.onload = function(){
         dear_friends();
-
     };
     function fontSize (){
     // maximum font size
@@ -89,8 +89,20 @@ $(function (){
         element.css('margin', marginTop+'px 0');
     }
     home_height();
-    
+   
+    // choose stylesheets
+/*    function adjustStyle(width) {
+        width = parseInt(width);
+        if (width < 321) {
+            $("#size-stylesheet").attr("href", "css/320px.css");
+        } else {
+            $("#size-stylesheet").attr("href", "css/style.css");
+        }
+    }
+    adjustStyle($(window).width());
+*/
     $(window).resize(function () {
+//        adjustStyle($(this).width());
         fontSize();
         testimonials();
         home_height ();

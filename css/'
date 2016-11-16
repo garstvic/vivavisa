@@ -1,0 +1,87 @@
+@media screen and (max-width: 320px){
+
+body { }
+
+h2 { font-size: 28px; line-height: 34px; }
+h3 { font-size: 24px; line-height: 30px; }
+h4 { font-size: 20px; line-height: 26px; }
+
+p { margin-bottom: 10px;
+}
+input.name, input.tel { padding: 20px 40px; }
+
+.fa-2x { font-size: 1.6em; }
+section { padding: 20px 0; }
+
+/* header */
+.st-navbar { }
+           .brand-img { height: 30px;}
+           .st-navbar-mini .brand-img { height: 18px; }
+/* section home */
+.home { }
+
+/* section pricing */
+.pricing { padding: 20px 0; }
+.pricing .section-title { margin-bottom: 0; }
+.pricing h3 { padding: 0; font-size: 24px; line-height: 30px; }
+.pricing .col-xs-12:nth-child(even) { display: none; }
+.pricing .pricing-footer a { width: 100%; }
+
+/* section features-desc */
+.features-desc { padding: 20px 0; }
+.features-desc .general { margin-bottom: 20px; }
+.features-desc .dear-friends { padding: 0 15px; }
+.features-desc .dear-friends h3 { font-size: 24px; line-height: 30px; text-align: center; }
+.features-desc .dear-friends span { font-size: 20px; line-height: 26px; }
+.features-desc .dear-friends p { padding: 0; text-align:inherit; line-height: 20px;}
+.features-desc .dear-friends a { width: 100%; }
+
+/* section adventages */
+.adventages { padding: 20px 0 !important; text-align: left; }
+.adventages .section-title { margin-bottom: 0px; }
+.adventages .section-title h3 { padding: 0; margin: 0 0 13px 0; font-size: 24px; line-height: 30px; font-weight: 400; }
+.adventages .adventage-img { display: none; }
+.adventages .col-md-7 { padding: 0; }
+.adventages .adventage blockquote { margin: 0 0 20px; padding: 0px 15px;}
+.adventages .adventage blockquote h4 { font-size: 24px; line-height: 30px; }
+.adventages .adventage blockquote p { text-align: inherit; padding-bottom: 10px;} 
+.adventages .adventage .adventage-num { width: 32px; height: 32px; font-size: 18px; line-height: 32px; left: 15px; top: -16px;}
+/* section consultation */
+.consultation { padding: 20px 0; }
+.consultation .st-title h3 { font-size: 24px; line-height: 30px; margin: 0 0 10px 0; font-weight: 400; }
+.consultation .st-title p { margin-bottom: 10px; line-height: 20px; }
+.consultation .get-consult h4 { font-size: 20px; line-height: 26px; font-weight: 400;}
+.consultation .get-consult p { font-weight: 400; }
+
+/* section adventages second */
+.adventage-second { }
+.adventage-second blockquote { padding: 0; }
+.adventage-second blockquote:before { width: 32px; height: 32px; left:0; top: -30px;  }
+.adventage-second blockquote p { padding: 0 0 10px; margin: 15px 0 20px; line-height: 20px;}
+.adventage-second blockquote p:before { content: '\f078'; left: 0; top: -25px; left: 7px; color: #fff; }
+/* section visa-today */
+.visa-today { padding: 20px 0; }
+.visa-today .section-title { margin: 0; }
+.visa-today .section-title h3 { font-size: 24px; line-height: 30px; margin: 0 0 10px 0; font-weight: 400; padding: 0; text-align: left;}
+.visa-today p { font-size: 14px; line-height: 20px; margin-bottom: 10px;}
+.visa-today .col-md-3 { text-align: center; }
+.visa-today .visa-today-form p { font-size: 16px; line-height: 22px; }
+
+/* section refusal */
+.refusal { }
+
+/* section office */
+.office { }
+
+/* section three-steps */
+.three-steps
+
+/* footer */
+.site-footer { }
+
+/* testimonials */
+.testimonials { text-align: left; padding: 20px 0; }
+.testimonials .testimonial-img { text-align: center; float: none; margin: 10px 0; }
+.testimonials .testimonial-img img { margin-top: 0 !important; }
+.testimonials blockquote { padding: 0 ; }
+.testimonials blockquote p { text-align: inherit; }

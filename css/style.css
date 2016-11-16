@@ -1,11 +1,13 @@
-/* font */
-@font-face
-{
-    font-family: Calibri;
-    src: url(../fonts/Calibri.ttf);
+/* bootstrap bug */
+.modal-backdrop {
+    /* bug fix - no overlay */    
+    /* display: none;    */
+    z-index: -1;
 }
 
 /* body */
+
+
 body
 {
     font-family: 'PT Sans', sans-serif;
@@ -20,7 +22,6 @@ body
 
 h1, h2, h3, h4, h5, h6
 {
-    color: #fff;
     font-weight: 700;
 }
 
@@ -42,6 +43,9 @@ a:hover
     color: #4c4c4c;
 }
 
+/* float-right */
+.fr { float: right; }
+
 .btn 
 {
     font-size: 1.2em;
@@ -57,7 +61,8 @@ a:hover
 {
     padding: 10px 35px;
     letter-spacing: 2px;
-    font-size: 1.25em;
+    font-size: 1.4em;
+    height: 52px;
 }
 
 .btn-main
@@ -128,10 +133,9 @@ form button
 {
     text-transform: uppercase;
     color: #4c4c4c;
-    color: #000;
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 2px;
-    font-size: 28px;
+    font-size: 36px;
     line-height: 48px;
     display: inline-block;
     *display: inline;
@@ -360,8 +364,7 @@ form button
     display: none;
     color: #4c4c4c;
     font-size: 1.7em;
-    font-weight: 300;
-    letter-spacing: 2px;
+    font-weight: 700;
     padding-top: 20px; 
     margin-bottom: 0;
 /*    text-shadow: 1px 1px #333; */
@@ -413,7 +416,7 @@ form button
     width: 24px;
     margin-left: - 15px;
     display: block;
-    z-index: 10;
+/*    z-index: 10; */
     opacity: 0.8;
 }
 
@@ -729,6 +732,10 @@ form button
             transform: rotate(-45deg);
 }
 
+.pricing .btn{
+    font-size: 20px;
+}
+
 /* features-desc */
 .features-desc
 {
@@ -748,6 +755,10 @@ form button
     padding-left: 60px;
     text-align: left;
 }
+.features-desc .dear-friends a {
+    margin-right: 30px;
+    line-height: 28px;
+}
 
 .features-desc .center
 {
@@ -760,6 +771,7 @@ form button
     line-height: 58px;
     letter-spacing: -1px;
     margin-top: -10px;
+    padding-left: 30px;
 }
 
 .features-desc span
@@ -791,17 +803,22 @@ form button
     padding: 100px 0;
 }
 
+.adventages .section-title{
+    margin-bottom: 0px;
+}
 .adventages .section-title h3
 {
-    font-size: 44px;
-    font-weight: 700;
-    color: #4c4c4c;
-    line-height: 56px;
+    margin-top: 0px;
+}
+
+.adventages .section-title h3>span{
+    font-size: 58px;
+    color: green;
 }
 
 .adventages .adventage-img
 {
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .adventages .adventage
@@ -876,7 +893,9 @@ form button
 
 .consultation .st-title p
 {
-    font-size: 18px;
+    font-size: 28px;
+    line-height: 32px;
+    padding-top: 30px;
     color: #fff;
     font-weight: 400;
 }
@@ -891,7 +910,7 @@ form button
     font-weight: 600;
     line-height: 44px;
     color: #fff;
-    margin-top: 30px;
+    margin-top: 20px;
     line-height: 42px;
     text-align: center;
 }
@@ -927,7 +946,6 @@ form button
     position: absolute;
     top: -6px;
     width: 80px;
-    z-index: -1;
 }
 
 .adventage-second.small blockquote
@@ -940,7 +958,7 @@ form button
     height: 40px;
     width: 40px;
     left: 1px;
-    top: 12px;
+    top: 0px;
 }
 
 .adventage-second blockquote p
@@ -971,7 +989,7 @@ form button
 .adventage-second.small blockquote p:before
 {
     left: -22px;
-    top: 11px;
+    top: 0px;
     font-size: 14px;
 }
 
@@ -981,11 +999,43 @@ form button
     background-color: rgba(233,233,233,1);
     padding: 100px 0;
 }
+.visa-today .doc-title{
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+.visa-today p{
+    text-align: center;
+    font-size: 16px;
+}
 
 /* refusal */
 .refusal
 {
     padding: 100px 0px;
+}
+
+.refusal .adventages {
+    padding: 0;
+}
+
+.refusal h4{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.refusal .small blockquote{
+    margin-left: 0px;
+}
+
+
+.refusal .refusal-form p{
+    margin-top: 50px;
+}
+
+.refusal .refusal-form p{
+    font-size: 16px;
+    text-align: center;
 }
 
 /* office */
@@ -997,7 +1047,7 @@ form button
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 500px
+    min-height: 500px;
 }
 
 .office .container
@@ -1013,20 +1063,43 @@ form button
 
 .office .every-year
 {
-    display: none;
     background-color: #fff;
     box-shadow: 0 5px 35px 0 rgba(0,0,0,.25);
     position: absolute;
     max-width: 730px;
-    top: -40px;
+    top: -80px;
     left: 500px;
-    padding: 50px 40px;
+    padding: 50px 60px;
     z-index: 1;
 }
 
+.office .every-year h3 {
+    font-size: 28px;
+}
+.office .every-year p {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+.office .every-year ul{
+    font-size: 16px;
+    line-height: 24px;
+    list-style-type: none;
+    position: relative;
+}
+.office .every-year ul>li{
+    line-height: 32px;
+    font-style: italic;
+}
+
+.office .every-year ul>li:before{
+    font-family: FontAwesome;
+    content: '\f105';
+    padding-right: 10px;
+}
 .office .office-contacts
 {
-    display: none;
     background-color: orange;
     min-height: 300px;
     min-width: 400px;
@@ -1034,6 +1107,25 @@ form button
     top: 250px;
     left: 400px;
     padding: 50px;
+}
+.office .office-contacts a
+{
+    display: block;
+    color: #4c4c4c;
+    padding-top: 150px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline !important;
+}
+.office .office-contacts a:active,
+.office .office-contacts a:focus{
+    outline: none;
+}
+
+.office .office-contacts a::-moz-focus-inner{
+    border: 0;
 }
 
 /* three-steps */
@@ -1052,9 +1144,9 @@ form button
 
 }
 
-.three-steps .steps .steps-header .section-title
+.three-steps .section-title
 {
-
+    margin-bottom: 20px;
 }
 
 .three-steps .steps .steps-header .section-title h3
@@ -1062,9 +1154,9 @@ form button
 
 }
 
-.three-steps .steps .steps-header .section-title p
+.three-steps .steps-header p
 {
-
+    font-size: 28px;
 }
 
 .three-steps .steps .step
@@ -1091,7 +1183,7 @@ form button
     /* position */
     position: absolute;
     top: 0px;
-    left: -25px;
+    left: -5px;
 
     /* as block element */
     display: block;
@@ -1101,12 +1193,26 @@ form button
 
 .three-steps .steps .step .step-body blockquote p
 {
-
+    padding-left: 20px;
 }
 
 .three-steps .steps .step .step-body .step-num
 {
     position: absolute;
-    top: 6px;
-    left: -8px;
+    top: 7px;
+    left: 12px;
+    font-size: 16px;
+}
+
+.three-steps .three-steps-form{
+    margin-top: 50px;
+}
+
+/* footer */
+footer.site-footer{
+    background-color: rgba(54,71,79,1);
+    padding: 10px 0;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
 }

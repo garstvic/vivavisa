@@ -15,14 +15,21 @@
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css?family=Tenor+Sans" rel="stylesheet">
         <!-- PT Sans -->
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Sans+Narrow:400,700|PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+        <!-- PT Sans Narrow -->
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <!-- PT Sans Caption -->
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&amp;subset=cyrillic" rel="stylesheet">
 
         <!-- css -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
 
-        <link href="css/style.css" rel="stylesheet">
-        <!-- woo.js/animate.css -->
+        <link id="size-stylesheet" type="text/css" href="css/style.css" rel="stylesheet">
+        <!-- different resolution style -->
+        <link rel="stylesheet" media="screen and (max-width: 320px)" href="css/320px.css"> 
+
+        <!-- wow.js/animate.css -->
         <link href="css/animate.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -43,7 +50,7 @@
     
     <!-- header-begin -->
     <header class="st-navbar">
-        <nav class="navbar navbar-default navbar-fixed-top clearfix" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top clearfix">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
@@ -53,17 +60,24 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button> 
-                        <a class="navbar-brand" hfer="#"><img class="brand-img" src="img/logo-brown.png" alt=""></a>
+                        <a class="navbar-brand" href="#"><img class="brand-img" src="img/logo-brown.png" alt=""></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active"><a href="#">Главная</a></li>
-                            <li><a href="#">Акции</a></li>
-                            <li><a href="#">О компании</a></li>
+                            <li><a href="#pricing">Акции</a></li>
+                            <li><a href="#about-us">О компании</a></li>
                             <li><a href="#">Почему мы</a></li>
                         </ul> 
+
+                        <div class="">
+                            <ul class="navbar-left">
+<!--                                <div>(555) 555-55-55</div>
+                                <div>(555) 555-55-55</div> -->
+                            </ul>
+                        </div>
                         <!--
                         <div class="navbar-right phones">
                             <p class="navbar-text">(555) 555-55-55</p>
@@ -82,7 +96,7 @@
                             </div>
                         </ul>
                         -->
-<!--                    </div> -->
+                     </div>
                 </div>
         </nav>
     </header>
@@ -103,8 +117,8 @@
                                     <span class="with-us">Если оформлять с</span><br><span class="brand">БыстроВиза!</span>
                                 </p>
                             </div>
-                                <a href="#" class="btn btn-main btn-lg btn-home">Узнать Больше</a>
-                                <p class="hero-item">Мы предлагаем оформить визу для Вас и Ваших близких в кратчайшие сроки,<br>даже в случае отказа и располагая минимальным пакет документов.</p>
+                                <a href="#about-us" class="btn btn-main btn-lg btn-home">Узнать Больше</a>
+                                <p class="hero-item">Мы предлагаем оформить визу для Вас и Ваших близких в кратчайшие сроки,<br>даже в случае отказа и располагая минимальным пакетом документов.</p>
                       </div>
                    
                     </div>
@@ -143,7 +157,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title st-center">
-                        <h3>Наши специальные предложения по оформлению виз</h3>
+                        <h3>Специальные предложения по оформлению виз</h3>
                     </div>
                 </div>
             </div>
@@ -158,7 +172,7 @@
                             <ul>
                                 <li><img class="img-center" src="img/plane.png" alt=""></li>
                                 <li>Мультивиза в Италию</li>
-                                <li>до <span class="big-price">150&euro;<ospan></li>
+                                <li>до <span class="big-price">150&euro;</span></li>
                             </ul>
                         </div>
                         <div class="pricing-footer">
@@ -175,12 +189,12 @@
                         <div class="pricing-body">
                             <ul>
                                 <li><img class="img-center" src="img/hand.png" alt=""></li>
-                                <li>Оформление всех видов виз в кратчайшие сроки</li>
-                                <li>Рабочая виза в Польшу до <span class="big-attention">3-х недель</span>
+                                <li>Оформление виз в кратчайшие сроки</li>
+                                <li>Рабочая виза в Польшу до<br><span class="big-attention">3-х недель</span>
                             </ul>
                         </div>
                         <div class="pricing-footer">
-                            <a href="#" class="btn btn-main">Узнать</a>
+                            <a href="#visa-today" class="btn btn-main">Узнать</a>
                         </div>
                     </div>
                 </div>
@@ -216,7 +230,7 @@
                             </ul>
                         </div>
                         <div class="pricing-footer">
-                            <a href="#" class="btn btn-main">Узнать</a>
+                            <a href="#refusal" class="btn btn-main">Узнать</a>
                         </div>
                     </div>
                 </div>
@@ -250,18 +264,18 @@
     <!-- testimonial #2 - end -->
 
     <!-- features-desc - begin -->
-    <section class="features-desc">
+    <section class="features-desc" id="about-us">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 col-sm-5 col-xs-12 general">
                     <img src="photo/general.jpg" alt="" class="img-responsive">
                     <span class="center">Генеральный директор компании &quot;БыстроВиза&quot;</span>
                 </div>
-                <div class="col-md-7 dear-friends">
+                <div class="col-md-7 col-sm-7 col-xs-12 dear-friends">
                     <h3>Дорогие друзья!<br><span>Я тоже оформлял визу как и Вы.</span></h3>
                     <p>Я понимаю как тяжело выбрать правильную компанию, которая занимается оформлением виз, собрать пакет нужных документов, а так же не попасть в финансовые аферы. Пройдя этот путь, я встретил не мало людей, который попадали в неприятную ситуацию вовремя получения визы.</p>
                     <p>Компания &quot;БыстроВиза&quot; была основана в 2009 года и за это время заработала солидную репутацию, поэтому к нам обращаются люди с других регионов. По необходимости менеджер предоставит Вам все юридические гарантии, разрешительные документы, а отзывы, касательно деятельности нашей фирмы, вы можете прочитать, как на сайте, так и в интернете на профильных форумах. Будем рады Вам помочь!</p>
-                    <a href="#" class="btn btn-main btn-lg btn-home"><i class="fa fa-paper-plane"></i> Отправить письмо</a>
+                    <a href="#" class="btn btn-main btn-lg btn-home fr" data-toggle="modal" data-target="#send-letter"><i class="fa fa-paper-plane"></i> Отправить письмо</a>
                 </div>
             </div>
         </div>
@@ -276,7 +290,7 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="section-title st-center">
-                        <h3>Почему вы можете доверить оформление визы нам?</h3>
+                        <h3>Почему<br>клиенты доверяют оформление виз нам?</h3>
                         <div class="adventage-img">
                             <img src="img/passport.jpg" class="img-responsive" alt="">
                         </div>
@@ -285,22 +299,22 @@
                     <div class="col-md-7">
                         <div class="adventage">
                             <blockquote>
-                                <h4>Наши специалисты владеют всей актуальной информацией</h4>
-                                <p>Мы окажем Вам консультационную помощь по всех возникших вопросам, поможем оформить анкету и собрать необходимые документы. Есть основной пакет документов для всех стран, но имеются отличия в зависимости от страны, в посольство которой они подаются.</p>
+                                <h4>Мы в совершенстве знаем Визовый Кодекс</h4>
+                                <p>Посольства стран Шенгенского соглашения выдают визы согласно Визового кодекса. Менеджеры компании предоставят Вам исчерпывающую консультацию в этом вопросе, чтобы Вы не полагались на многочисленные вольные интерпретации в Интернете и среди знакомых.</p>
                             </blockquote>
                             <div class="adventage-num">1</div>
                         </div>
                         <div class="adventage">
                             <blockquote>
-                                <h4>Наши специалисты владеют всей актуальной информацией</h4>
-                                <p>Мы окажем Вам консультационную помощь по всех возникших вопросам, поможем оформить анкету и собрать необходимые документы. Есть основной пакет документов для всех стран, но имеются отличия в зависимости от страны, в посольство которой они подаются.</p>
+                                <h4>Предлагаем только проверенные способы оформления визы</h4>
+                                <p>Зная Вашу ситуацию, мы выбираем только те варианты, по результатам которых Вы получите визу с вероятностью в 100%.</p>
                             </blockquote>
                             <div class="adventage-num">2</div>
                         </div>
                         <div class="adventage">
                             <blockquote>
-                                <h4>Мы в совершенстве знаем Визовый Кодекс</h4>
-                                <p>Все посольства стран Шенгенского соглашения выдают визы в соответствии с документом, который называется &quot;Визовый кодекс&quot;. Наши специалисты предоставят Вам исчерпывающую консультацию в этом вопросе, чтобы Вы не полагались на многочисленные вольные интерпретации в Интернете и среди знакомых.</p>
+                                <h4>Помогаем пройти собеседование</h4>
+                                <p>Консульства некоторых стран принимают окончательное решение только после личного собеседования. Это стало уже нормой, поэтому мы заранее вас подготовим.</p>
                             </blockquote>
                             <div class="adventage-num">3</div>
                         </div>
@@ -314,19 +328,18 @@
     <section class="consultation">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <div class="st-title st-center">
                         <h3>Клиенты Компании получают визы, потому что у нас работают опытные менеджеры.</h3>
-                        <p>Lorem ipsum dolor sit amet, eu reque errem vis, omnis detracto inimicus id nam. Munere insolens ne vis, pri no qualisque dissentias.</p>
-                        <p>Lorem ipsum dolor sit amet, eu reque errem vis, omnis detracto inimicus id nam. Munere insolens ne vis, pri no qualisque dissentias.</p>
+                        <p>Если вам нужно в Италию, то шенгенскую визу не обязательно открывать в итальянском консульстве с высоким риском получить отказ.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-md-offset-2">
+                <div class="col-md-4 col-md-offset-1">
                     <div class="get-consult">
-                        <h4>Оставьте свои контакты чтобы получить консультацию.</h4>
+                        <h4>Оставьте контакты чтобы получить консультацию.</h4>
                         <p>Наши консультанты всегда в сети</p>
                     </div>
-                    <form class="get-consult-form" role="form">
+                    <form class="get-consult-form">
                         <div class="input">
                             <input id="get-consult-name" type="text" class="form-control name" name="fname" placeholder="Ваше полное имя">
                             <div class="fa-input">
@@ -339,23 +352,22 @@
                                 <i class="fa fa-phone fa-2x"></i>
                             </div>
                         </div>
-                        <button id="get-consult-btn" class="btn btn-main btn-lg" type="submit" datal-loading-text="<i class='fa fa-spinner fa-spin'></i>Отправка...">
+                        <button id="get-consult-btn" class="btn btn-main btn-lg" type="submit" data-loading-text="<i class='fa fa-spinner fa-spin'></i>Отправка...">
                             <!-- <i class="fa fa-paper-plane"></i> -->
                             Получить консультацию
                         </button>
                     </form>
                     <div id="get-consult-result" role="alert"></div>
                 </div>
-            <div>
+            </div>
         </div>
     </section>
     <!-- get-consult - end -->
 
     <!-- testimonial #3 - begin -->
-    <section class="testimonials pink">
+    <section class="testimonials">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
                     <div class="testimonial">
                         <div class="col-md-3 col-sm-3 col-xs-12">
                         <div class="testimonial-img">
@@ -364,12 +376,11 @@
                         </div>
                         <div class="col-md-9 col-sm-9 col-xs-12">
                         <blockquote>
-                            <p class="black">Мне поступило предложение по работе в области разработки ПО в Дании. Честно говоря, так сложилось, что я никогда не был заграницей. И ни я ни мой круг знакомых не сталкивался с оформлением виз. Я не особо люблю общение с консультантами, менеджерами и бегать выбирать компанию не для меня. На форумах я не раз встречал название данной компании, потому и обратился. Самое главное что отзывы не подвели, мне четко назвали стоимость, озвучили требования, после чего в кратчайшие сроки оформили все необходимые документы.</p>
-                            <footer class="black">Name Surname, <cite title="Source Title">Example Inc.</cite></footer>
+                            <p>Мне поступило предложение по работе в области разработки ПО в Дании. Честно говоря, так сложилось, что я никогда не был заграницей. И ни я ни мой круг знакомых не сталкивался с оформлением виз. Я не особо люблю общение с консультантами, менеджерами и бегать выбирать компанию не для меня. На форумах я не раз встречал название данной компании, потому и обратился. Самое главное что отзывы не подвели, мне четко назвали стоимость, озвучили требования, после чего в кратчайшие сроки оформили все необходимые документы.</p>
+                            <footer>Name Surname, <cite title="Source Title">Example Inc.</cite></footer>
                         </blockquote>
                         </div>
                     </div>
-                </div>  
             </div>
         </div>
     </section>
@@ -381,7 +392,7 @@
             <div class="row">
                 <div class="col-md-12 wow fadeIn">
                     <div class="section-title st-center">
-                        <h3>Наши клиенты получают визы, потому что у нас работают отличные специалисты.</h3>
+                        <h3><span>99,3%</span> клиентов компании получают визы с первого раза.</h3>
                     </div>
                 </div>
             </div>
@@ -389,17 +400,17 @@
                 <div class="col-md-12">
                     <div class="adventage-second wow fadeInRight">
                         <blockquote>
-                            <p>Наши сотрудники являются профессионалами своего дела с большим стажем работы, поэтому документы наших клиентов попадают первыми на очередь в консульство.</p>
+                            <p>Сотрудники компании юридически подкованы в вопросах оформления виз, поэтому документы клиентов попадают первыми на очередь в консульство.</p>
                         </blockquote>
                     </div>
                     <div class="adventage-second wow fadeInLeft">
                         <blockquote>
-                            <p>Наши специалисты тратят на заявление каждого клиента ровно столько времени, сколько необходимо что бы все документы были заполнены без единой ошибки, и поэтому их не возвращают на доработку или замену.</p>
+                            <p>Менеджеры тратят на заявление каждого клиента ровно столько времени, сколько требуется, что бы документы были заполнены без единой ошибки, и поэтому они не возвращаются на доработку или замену.</p>
                         </blockquote>
                     </div>
                     <div class="adventage-second wow fadeInRight">
                         <blockquote>
-                            <p>Мы подкрепляем заявление только реальными документами.</p>
+                            <p>Репутация для нас не пустое слово, поэтому мы подкрепляем заявление только действительными документами.</p>
                         </blockquote>
                     </div>
                 </div>
@@ -409,7 +420,7 @@
     <!-- adventages # 2 - end -->
     
     <!-- visa-today - begin -->
-    <section class="visa-today">
+    <section class="visa-today" id="visa-today">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -417,31 +428,31 @@
                         <h3>Начни оформлять визу уже сегодня!</h3>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-7 col-sm-7">
                         <div class="row">
-                            <p>Собери минимальный пакет документов:</p>
-                            <div class="col-md-3">
+                            <p class="doc-title">Подготовьте минимальный пакет документов:</p>
+                            <div class="col-md-3 col-sm-3">
                                 <img class="circle" src="img/stock.png" alt="">
                                 <p>Паспорт</p>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-sm-3">
                                 <img class="circle" src="img/stock.png" alt="">
                                 <p>Фото</p>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-sm-3">
                                 <img class="circle" src="img/stock.png" alt="">
                                 <p>Загранпаспорт</p>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-sm-3">
                                 <img src="img/stock.png" alt="">
                                 <p>ИНН</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                       <p>С вами свяжется первый свободный менеджер</p>
-                        <form class="visa-today-form" role="form">
+                    <div class="col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1">
+                        <form class="visa-today-form">
+                        <p>С вами свяжется первый свободный менеджер</p>
                             <div class="input">
                                 <input id="visa-today-name" type="text" class="form-control name" name="fname" placeholder="Ваше полное имя">
                                 <div class="fa-input">
@@ -490,39 +501,19 @@
     <!-- testimonial # 3 - end -->
 
     <!-- refusal - begin -->
-    <section  class="refusal">
+    <section  class="refusal" id="refusal">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 wow fadeInLeft">
-                    <div class="section-title st-left">
+                <div class="col-md-12 wow fadeInLeft">
+                    <div class="section-title st-center">
                         <h3>Вы уже получили отказ при оформлении визы?</h3>
-                        <p>Мы знаем как гарантировано получить визу даже после отказа</p>
                     </div>
                 </div>
-                <div class="col-md-6 wow fadeInRight">
-                    <div class="adventages">
-                        <div class="adventage-second small">
-                            <blockquote>
-                                <p>За время работы мы открыли 257 виз после отказов в других агентствах</p>
-                            </blockquote>
-                        </div>
-                        <div class="adventage-second small">
-                            <blockquote>
-                                <p>За время работы мы открыли 257 виз после отказов в других агентствах</p>
-                            </blockquote>
-                        </div>
-                        <div class="adventage-second small">
-                            <blockquote>
-                                <p>За время работы мы открыли 257 виз после отказов в других агентствах</p>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div> 
+            </div>
             <div class="row">
-                <div class="col-md-4 col-md-offset-4">
-                    <p>Гарантировано оформить визу даже после отказа</p>
+                <div class="col-md-4">
                     <form class="refusal-form">
+                        <p>Гарантировано оформить визу даже после отказа</p>
                         <div class="input">
                             <input id="refusal-name" type="text" class="form-control name" name="fname" placeholder="Ваше полное имя">
                             <div class="fa-input">
@@ -535,11 +526,33 @@
                                 <i class="fa fa-phone fa-2x"></i>
                             </div>
                         </div>
-                        <button id="refusal-btn" class="btn btn-main btn-lg" type="submit" datal-loading-text="<i class='fa fa-spinner fa-spin'></i>Отправка...">
+                        <button id="refusal-btn" class="btn btn-main btn-lg" type="submit" data-loading-text="<i class='fa fa-spinner fa-spin'></i>Отправка...">
                             Оформить визу
                         </button>
                     </form>
                     <div id="refusal-result" role="alert"></div>
+                </div>
+                <div class="col-md-7 col-md-offset-1 wow fadeInRight">
+                    <div class=" st-left">
+                        <h4>Мы знаем как гарантировано получить визу даже после отказа.</h4>                        
+                    </div>
+                    <div class="adventages">
+                        <div class="adventage-second small">
+                            <blockquote>
+                                <p>За время работы мы открыли 264 визы после отказов в других агентствах</p>
+                            </blockquote>
+                        </div>
+                        <div class="adventage-second small">
+                            <blockquote>
+                                <p>Знаем, в каком консульстве какую визу и для каких целей открывают 100%</p>
+                            </blockquote>
+                        </div>
+                        <div class="adventage-second small">
+                            <blockquote>
+                                <p>Открыли 29 виз после нескольких отказов из других агентств</p>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -558,7 +571,7 @@
                     </div>
                     <div class="col-md-9 col-sm-9 col-xs-12">
                         <blockquote>
-                            <p>Отзыв после отказа</p>
+                            <p>По правде говоря, после двух неудачных попыток получить визу, я уже и не надеялся на положительный результат, но по совету друга, обратился в компанию &quot;БыстроВиза&quot;. Профессиональный подход к клиенту, который я увидел в компании, сумел убедить меня в положительном результате. И теперь я счастливый обладатель двухлетней мультивизы.</p>
                             <footer>Name Surname, <cite title="Source Title">Example, Inc</cite></footer>
                         </blockquote>
                     </div>
@@ -573,19 +586,19 @@
         <div class="container">
             <div class="row">
                 <div class="every-year">
-                    <h3>Ежегодно более 1000 человек обращается в нашу компанию по всей стране.</h3>
-                    <p>&quot;БыстроВиза&quot; - это компания которая осуществляет большой спектр услуг:</p>
+                    <h3>Ежегодно свыше 1000 человек обращается<br>в нашу компанию со всех регионов страны.</h3>
+                    <p>Компания &quot;БыстроВиза&quot; предоставляет также и такие услуги:</p>
                     <ul>
-                        <li>иммиграция (ВНЖ/ПМЖ)</li>
+                        <li>помощь в оформлении ВНЖ/ПМЖ</li>
                         <li>трудоустройсво зарубежом</li>
-                        <li>помощь в получении образования зарубежом</li>
-                        <li>недвижемость зарубежом</li>
+                        <li>помощь в получении образования в Европе и США</li>
                         <li>перевод документов</li>
+                        <li>помощь в покупке недвижимости в Европе</li>
                         <li>нотариальное заверение документов</li>
                     </ul>
                 </div>
                 <div class="office-contacts">
-                    <h4>Наши контакты</h4>
+                    <a href="#" data-toggle="modal" data-target="#contacts">Наши контакты</a>
                 </div>
             </div>
         </div>
@@ -595,66 +608,107 @@
     <!-- three-steps - begin -->
     <section class="three-steps">
         <div class="container">
-            <div class="col-md-8">
-                <div class="steps">
-                    <div class="steps-header">
-                        <div class="section-title st-left">
-                            <h3>Виза это просто - если офoрмлять с нами!</h3>
-                            <p>Получи визу за всего за три шага:</p>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-body">
-                            <blockquote>
-                                <p>Подготовить вместе с нами документы</p>
-                            </blockquote>
-                            <div class="step-num">1</div>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-body">
-                            <blockquote>
-                                <p>Прийти в посольство по заОтправить письмо для ВАС</p>
-                            </blockquote>
-                            <div class="step-num">2</div>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-body">
-                            <blockquote>
-                                <p>Забрать визу</p>
-                            </blockquote>
-                            <div class="step-num">3</div>
+            <div class="steps">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-title st-center">
+                                <h3>Виза это просто - если офoрмлять с нами!</h3>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <form class="three-steps-form" role="form">
-                    <p></p>
-                    <div class="input">
-                        <input id="three-steps-name" type="text" class="form-control name" name="fname" placeholder="Ваше полное имя">
-                        <div class="fa-input">
-                            <i class="fa fa-user fa-2x"></i>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-1">
+                        <div class="steps-header">
+                            <p>Получи визу в три шага:</p>
                         </div>
-                    </div>
-                    <div class="input">
-                        <input id="three-steps-tel" type="text" class="form-control name" name="ftel" placeholder="Номер Вашего телефона">
-                        <div class="fa-input">
-                            <i class="fa fa-phone fa-2x"></i>
+                        <div class="step">
+                            <div class="step-body">
+                                <blockquote>
+                                    <p>Подготовить вместе с нами документы</p>
+                                </blockquote>
+                                <div class="step-num">1</div>
+                            </div>
                         </div>
+                        <div class="step">
+                            <div class="step-body">
+                                <blockquote>
+                                    <p>Прийти в посольство по записи, согласованной с Вами</p>
+                                </blockquote>
+                                <div class="step-num">2</div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-body">
+                                <blockquote>
+                                    <p>Забрать визу</p>
+                                </blockquote>
+                                <div class="step-num">3</div>
+                            </div>
+                         </div>
                     </div>
-                    <button id="three-steps-btn" class="btn btn-main btn-lg" type="submit" data-loading-text="<i class='fa fa-spinner fa-spin'></i>Отправка...">
-                        <!-- <i class="fa fa-paper-plane"></i> -->
-                        Оформить визу
-                    </button>
-                </form>
-                <div id="three-steps-result" role="alert"></div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <form class="three-steps-form">
+                            <p></p>
+                            <div class="input">
+                                <input id="three-steps-name" type="text" class="form-control name" name="fname" placeholder="Ваше полное имя">
+                                <div class="fa-input">
+                                    <i class="fa fa-user fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <input id="three-steps-tel" type="text" class="form-control name" name="ftel" placeholder="Номер Вашего телефона">
+                                <div class="fa-input">
+                                    <i class="fa fa-phone fa-2x"></i>
+                                </div>
+                            </div>
+                            <button id="three-steps-btn" class="btn btn-main btn-lg" type="submit" data-loading-text="<i class='fa fa-spinner fa-spin'></i>Отправка...">
+                                <!-- <i class="fa fa-paper-plane"></i> -->
+                                Оформить визу
+                            </button>
+                        </form>
+                        <div id="three-steps-result" role="alert"></div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+    <!-- three-steps - end -->
+    <!-- footer - begin -->
+    <footer class="site-footer">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    &copy; 2016 БыстроВиза.
     </div>
-</section>
-<!-- three-steps - end -->`
+    </div>
+    </div>
+    </footer>
+    <!-- footer - end -->
+
+    <!-- modal windows - begin -->
+
+
+    <!-- contacts - begin -->
+    <!-- Modal -->
+    <div class="modal fade" id="contacts" tabindex="-1" role="dialog" aria-labelledby="contactsLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                         <h4 class="modal-title" id="contactsLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact - end -->
+        <!-- modal windows - end -->
 
 <!-- js -->
 <!--
@@ -668,5 +722,25 @@
 <script src="js/wow.min.js"></script>
 <script src="js/flowtype.js"></script>
 <script src="js/script.js"></script>
+
+    <!-- send-letter - begin -->
+    <div class="modal fade" id="send-letter" tabindex="-1" role="dialog" aria-labelledby="send-letterLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="send-letterLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- send-letter - begin -->
 </body>
 </html>
